@@ -5,7 +5,6 @@ function About() {
     return (
         <>
             <Navbar></Navbar>
-            {/* testiiiiiiiiiiiing */}
             <section className="py-4 px-6 sm:px-0">
                 <div className="flex flex-col sm:flex-row items-center justify-center sm:items-start lg:justify-around">
                     <div className="w-full sm:w-[20%] md:w-[17%] lg:w-[15%] xl:w-[10%]  max-w-sm border border-gray-400 rounded-lg flex sm:flex-col">
