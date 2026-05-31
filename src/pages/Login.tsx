@@ -23,7 +23,7 @@ function Login() {
         <>
             <Navbar />
             <section className="flex flex-col items-center justify-center h-screen">
-                <div className="bg-white p-8 rounded-md shadow-md text-center border border-gray-300">
+                <div className="bg-green-400 p-8 rounded-md shadow-md text-center border border-gray-300">
                     <div className="flex flex-col gap-4 mb-4">
                         <input
                             onChange={(e) => setUsername(e.target.value)}
