@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import authorImage from "../assets/images/author.jpg";
 
 function About() {
     return (
@@ -9,7 +10,7 @@ function About() {
                     <div className="w-full sm:w-[20%] md:w-[17%] lg:w-[15%] xl:w-[10%]  max-w-sm border border-gray-400 rounded-lg flex sm:flex-col">
                         <img
                             className="w-24 h-24 sm:w-full sm:h-full rounded-r-lg sm:rounded-b-none sm:rounded-t-lg "
-                            src="src/assets/images/author.jpg"
+                            src={authorImage}
                             alt="auhor-image"
                         />
                         <div className="p-2 text-center">

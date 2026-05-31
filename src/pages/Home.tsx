@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom"
 import CourseItem from "../components/CourseItem";
+import homeLogo from "../assets/images/programming.svg";
 
 function Home() {
     return (
@@ -35,8 +36,7 @@ function Home() {
                     </div>
                     <div className=" md:w-[40%] ">
                         <img
-                            className =""
-                            src="./src/assets/images/programming.svg"
+                            src={homeLogo}
                             alt="Placeholder Image"
                         />
                     </div>
