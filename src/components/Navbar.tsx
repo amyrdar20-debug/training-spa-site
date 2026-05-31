@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom"
 
 function Navbar(){
     const [isOpen , setIsOpen] = useState(false)
+    let loginTitle = 'ورود';
+    (localStorage.getItem("isLoggedIn") === "true") ? loginTitle = 'خروج' : loginTitle = 'ورود';
 
     return(
         <>
@@ -18,7 +20,7 @@ function Navbar(){
                         <li><NavLink className={({isActive}) => `${isActive ? 'text-black' : 'text-gray-600'}`} to={'/blog'}>مقالات</NavLink></li>
                         <li><NavLink className={({isActive}) => `${isActive ? 'text-black' : 'text-gray-600'}`} to={'/about'}>درباره ما</NavLink></li>
                         <li><NavLink className={({isActive}) => `${isActive ? 'text-black' : 'text-gray-600'}`} to={'/panel'}>پنل</NavLink></li>
-                        <li><NavLink className={({isActive}) => `${isActive ? 'text-black' : 'text-gray-600'}`} to={'/login'}>ورود</NavLink></li>
+                        <li><NavLink className={({isActive}) => `${isActive ? 'text-black' : 'text-gray-600'}`} to={'/login'} onClick={() => { if (loginTitle === 'خروج') { localStorage.removeItem("isLoggedIn"); } }}>{loginTitle}</NavLink></li>
                     </ul>
 
 

@@ -1,4 +1,5 @@
 import ArticleSummary from "./components/ArticleSummary";
+import PrivateRoute from "./components/PrivateRoute";
 import About from "./pages/About";
 import ArticlePage from "./pages/ArticlePage";
 import Blog from "./pages/Blog";
@@ -17,7 +18,7 @@ const routes = [
         children: [{ path: ":id", element: <ArticleSummary /> }],
     },
     { path: "/about", element: <About /> },
-    { path: "/panel", element: <Panel /> },
+    { path: "/panel", element: <PrivateRoute><Panel /></PrivateRoute> },
     { path: "/login", element: <Login /> },
     { path: "/products/:id", element: <CoursePage /> },
     { path: "/blog/articles/:to", element: <ArticlePage /> },
